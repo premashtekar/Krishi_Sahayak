@@ -1,0 +1,33 @@
+2025-12-05 13:26:41,074 ERROR: Crop training error
+Traceback (most recent call last):
+  File "C:\SY PROJECTS\EDAI_KRISHI\EDAI_ml\app.py", line 466, in <module>
+    best, label_enc, acc, rep, cm = train_crop_pipeline(save_artifacts=True, quick=False)
+                                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SY PROJECTS\EDAI_KRISHI\EDAI_ml\app.py", line 190, in train_crop_pipeline
+    df = load_crop_dataset()
+  File "C:\SY PROJECTS\EDAI_KRISHI\EDAI_ml\app.py", line 116, in load_crop_dataset
+    raise ValueError("Crop dataset must contain 'Crop' column.")
+ValueError: Crop dataset must contain 'Crop' column.
+2025-12-05 13:26:51,214 ERROR: Crop training error
+Traceback (most recent call last):
+  File "C:\SY PROJECTS\EDAI_KRISHI\EDAI_ml\app.py", line 466, in <module>
+    best, label_enc, acc, rep, cm = train_crop_pipeline(save_artifacts=True, quick=False)
+                                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SY PROJECTS\EDAI_KRISHI\EDAI_ml\app.py", line 190, in train_crop_pipeline
+    df = load_crop_dataset()
+  File "C:\SY PROJECTS\EDAI_KRISHI\EDAI_ml\app.py", line 116, in load_crop_dataset
+    raise ValueError("Crop dataset must contain 'Crop' column.")
+ValueError: Crop dataset must contain 'Crop' column.
+2025-12-05 13:36:08,974 ERROR: Crop training error
+Traceback (most recent call last):
+  File "C:\SY PROJECTS\EDAI_KRISHI\EDAI_ml\app.py", line 456, in <module>
+    res = train_crop_pipeline(save_artifacts=True, quick=False)
+  File "C:\SY PROJECTS\EDAI_KRISHI\EDAI_ml\app.py", line 231, in train_crop_pipeline
+    pipeline, meta = build_crop_pipeline_from_df(df_sub)
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\SY PROJECTS\EDAI_KRISHI\EDAI_ml\app.py", line 190, in build_crop_pipeline_from_df
+    ('onehot', OneHotEncoder(handle_unknown='ignore', sparse=False))
+               ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: OneHotEncoder.__init__() got an unexpected keyword argument 'sparse'
+2025-12-05 13:51:10,631 INFO: Exported offline training scripts
+2025-12-05 13:51:39,979 INFO: Exported offline training scripts
